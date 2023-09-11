@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@layer components {
+
+    .snap-features{
+      @apply snap-y snap-mandatory h-screen overflow-scroll transition-all duration-500 scroll-smooth;
+
+    }
+
+
+    .nav-item {
+      @apply text-3xl font-semibold text-slate-900 py-2 px-5 rounded-[1.2rem] sm:bg-transparent bg-slate-400 hover:bg-slate-200 duration-500;
+    }
+
+    .car-section {
+      @apply w-full h-screen;
+    }
+
+    .car-img {
+      @apply w-full h-full opacity-80;
+    }
+
+    .car-detatails {
+      @apply absolute top-[20%] sm:top-[25%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center;
+    }
+
+    .car-name {
+      @apply text-5xl text-slate-800 font-bold mb-4;
+    }
+
+    .car-discription {
+      @apply text-2xl;
+    }
+
+    .car-button {
+      @apply absolute bottom-[15%] left-[50%] translate-x-[-50%] translate-y-[-50%] sm:left-[55%];
+    }
+
+    .btn {
+      @apply inline-block text-3xl sm:text-2xl sm:mb-7 text-black font-medium rounded-lg bg-slate-300 px-16 py-4 mr-2;
+    }
+
+    .btn-custom {
+      @apply inline-block text-3xl sm:text-2xl text-white font-medium rounded-lg bg-[#4D4A49] px-16 py-4 ml-2;
+    }
+
+    .down-arrow {
+      @apply absolute bottom-[5%] left-[50%] translate-x-[-50%] translate-y-[-50%] ml-6;
+    }
+
+
+
+  }
